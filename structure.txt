@@ -1,0 +1,50 @@
+🧠 Why This Is Important
+
+Modern observability has three pillars:
+Logs ✅
+Metrics ✅
+Traces ⭐
+
+Suppose a request passes through several services:
+
+Client
+   │
+   ▼
+API Gateway
+   │
+   ▼
+User Service
+   │
+   ▼
+Payment Service
+   │
+   ▼
+Notification Service
+
+If the request fails, distributed tracing shows exactly where and how long each step took.
+
+Benefits:
+✅ End-to-end request tracking
+✅ Performance analysis
+✅ Bottleneck detection
+✅ Faster debugging
+
+Used By:
+Kubernetes
+Jaeger
+Zipkin
+Grafana Tempo
+Honeycomb
+
+🛠 Tech Stack
+Python
+Flask
+OpenTelemetry
+Console Exporter
+
+📂 Project Structure
+opentelemetry-tracing/
+│
+├── app.py
+├── requirements.txt
+└── README.md
