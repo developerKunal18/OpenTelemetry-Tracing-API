@@ -1,0 +1,10 @@
+GET /payment
+      │
+      ▼
+HTTP Span
+      │
+      ▼
+payment-processing Span
+      │
+      ▼
+Console Exporter
